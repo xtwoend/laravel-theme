@@ -4,7 +4,6 @@
     "keywords": ["Laravel", "Theme", "CMS"],
     "version": "1.0.0",
     "license": "MIT",
-    "type": "package",
     "authors": [
         {
             "name": "Abdul Hafidz A",
