@@ -3,7 +3,8 @@
     "description": "The Simple Themes.",
     "keywords": ["Laravel", "Theme", "CMS"],
     "version": "1.0.0",
-    "license": "MIT",
+    "license": "MIT",    
+    "type": "library",
     "authors": [
         {
             "name": "Abdul Hafidz A",
