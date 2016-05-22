@@ -1,0 +1,26 @@
+{
+    "name": "xtwoend/laravel-themes",
+    "description": "The Simple Themes.",
+    "keywords": ["Xtwoend", "Theme", "CMS"],
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Abdul Hafidz A",
+            "email": "aditans88@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xtwoend\\Themes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/ThemeTest.php"
+        ]
+    }
+}
