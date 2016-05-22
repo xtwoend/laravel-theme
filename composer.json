@@ -1,7 +1,7 @@
 {
     "name": "xtwoend/laravel-themes",
     "description": "The Simple Themes.",
-    "keywords": ["Xtwoend", "Theme", "CMS"],
+    "keywords": ["Laravel5", "Theme", "CMS"],
     "version": "1.0.0",
     "license": "MIT",
     "type": "package",
