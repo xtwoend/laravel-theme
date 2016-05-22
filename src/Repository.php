@@ -387,7 +387,7 @@ class Repository implements Arrayable
             $theme = $this->find($theme);
         }
         
-        $path = 'assets/'. $theme->getVendor(). DIRECTORY_SEPARATOR . 'themes/'. $theme->getSlug() . DIRECTORY_SEPARATOR;
+        $path = 'assets/'. $theme->getName() . DIRECTORY_SEPARATOR;
 
         return url($path . $asset, null, $secure);
     }

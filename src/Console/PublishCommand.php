@@ -74,14 +74,14 @@ class PublishCommand extends Command
         if (!is_null($theme)) {
 
             $assetsPath = $theme->getPath('assets');
-            $distPath = public_path('assets/' . $theme->getVendor() . DIRECTORY_SEPARATOR .'themes');
+            $distPath = public_path('assets');
 
             if (! $this->files->isDirectory($distPath)) {
                 $this->files->makeDirectory($distPath, 0777, true, true);
             }
 
-            if(! $this->files->isDirectory($distPath . DIRECTORY_SEPARATOR . $theme->getSlug())){
-                symlink($assetsPath, $distPath . DIRECTORY_SEPARATOR . $theme->getSlug());
+            if(! $this->files->isDirectory($distPath . DIRECTORY_SEPARATOR . $theme->getName())){
+                symlink($assetsPath, $distPath . DIRECTORY_SEPARATOR . $theme->getName());
             }
 
             
