@@ -64,13 +64,13 @@ class ThemesServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    // public function registerViewFinder()
-    // {
-    //     $this->app->bind('view.finder', function ($app) {
-    //         $paths = $app['config']['view.paths'];
-    //         return new ThemeFileViewFinder($app['files'], $paths);
-    //     });
-    // }
+    public function registerViewFinder()
+    {
+        $this->app->bind('view.finder', function ($app) {
+            $paths = $app['config']['view.paths'];
+            return new ThemeFileViewFinder($app['files'], $paths);
+        });
+    }
 
     /**
      * Register the service provider.
@@ -88,7 +88,7 @@ class ThemesServiceProvider extends ServiceProvider
         });
 
         $this->registerCommands();
-        // $this->registerViewFinder();
+        $this->registerViewFinder();
     }
 
     /**
